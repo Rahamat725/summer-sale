@@ -46,7 +46,7 @@
 
             <!-- cards -->
             <!-- card-1 -->
-             <div onclick="cartItemsCalculate()" class="text-center shadow-2xl p-4">
+             <div onclick="cartItemsCalculate(this)" class="text-center shadow-2xl p-4">
                 <!-- image -->
                 <div class="bg-[#f3f3f3] p-5 flex items-center justify-center">
                     <img src="./images/prod1.png" alt="">
@@ -60,13 +60,13 @@
                     <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                   </div>
                   <h3 id="item-name" class="font-semibold text-xl">K. Accessories</h3>
-                  <p class="text-[#b8b8b8] font-semibold text-xl"><span class="" id="item-price">39.00</span>TK</p>
+                  <p class="text-[#b8b8b8] font-semibold text-xl"><span class="" id="item-price">39.00 </span>TK</p>
 
              </div>
 
              <!-- card-2 -->
 
-             <div onclick="cartItemsCalculate()" class="text-center shadow-2xl p-4">
+             <div onclick="cartItemsCalculate(this)" class="text-center shadow-2xl p-4">
                 <!-- image -->
                 <div class="bg-[#f3f3f3] p-5 flex items-center justify-center">
                     <img src="./images/prod2.png" alt="">
@@ -80,13 +80,13 @@
                     <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                   </div>
                   <h3 id="item-name" class="font-semibold text-xl">K. Accessories</h3>
-                  <p class="text-[#b8b8b8] font-semibold text-xl"><span class="" id="item-price">25.00</span>TK</p>
+                  <p class="text-[#b8b8b8] font-semibold text-xl"><span class="" id="item-price">25.00 </span>TK</p>
 
              </div>
 
              <!-- card-3 -->
 
-             <div onclick="cartItemsCalculate()" class="text-center shadow-2xl p-4">
+             <div onclick="cartItemsCalculate(this)" class="text-center shadow-2xl p-4">
                 <!-- image -->
                 <div class="bg-[#f3f3f3] p-5 flex items-center justify-center">
                     <img src="./images/prod3.png" alt="">
@@ -100,7 +100,7 @@
                     <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                   </div>
                   <h3 id="item-name" class="font-semibold text-xl">Home Cooker</h3>
-                  <p class="text-[#b8b8b8] font-semibold text-xl"><span class="" id="item-price">39.00</span>TK</p>
+                  <p class="text-[#b8b8b8] font-semibold text-xl"><span class="" id="item-price">39.00 </span>TK</p>
 
              </div>
 
@@ -113,7 +113,7 @@
           <div class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-4">
   <!-- cards -->
             <!-- card-1 -->
-            <div onclick="cartItemsCalculate()" class="text-center shadow-2xl p-4">
+            <div onclick="cartItemsCalculate(this)" class="text-center shadow-2xl p-4">
                 <!-- image -->
                 <div class="bg-[#f3f3f3] p-5 flex items-center justify-center">
                     <img src="./images/prod4.png" alt="">
@@ -127,13 +127,13 @@
                     <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                   </div>
                   <h3 id="item-name" class="font-semibold text-xl">Sports Back Cap</h3>
-                  <p class="text-[#b8b8b8] font-semibold text-xl"><span class="" id="item-price">49.00</span>TK</p>
+                  <p class="text-[#b8b8b8] font-semibold text-xl"><span class="" id="item-price">49.00 </span>TK</p>
 
              </div>
 
              <!-- card-2 -->
 
-             <div onclick="cartItemsCalculate()" class="text-center shadow-2xl p-4">
+             <div onclick="cartItemsCalculate(this)" class="text-center shadow-2xl p-4">
                 <!-- image -->
                 <div class="bg-[#f3f3f3] p-5 flex items-center justify-center">
                     <img src="./images/prod5.png" alt="">
@@ -147,13 +147,13 @@
                     <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                   </div>
                   <h3 id="item-name" class="font-semibold text-xl">Full Jersey Set</h3>
-                  <p class="text-[#b8b8b8] font-semibold text-xl"><span class="" id="item-price">69.00</span>TK</p>
+                  <p class="text-[#b8b8b8] font-semibold text-xl"><span class="" id="item-price">69.00 </span>TK</p>
 
              </div>
 
              <!-- card-3 -->
 
-             <div onclick="cartItemsCalculate()" class="text-center shadow-2xl p-4">
+             <div onclick="cartItemsCalculate(this)" class="text-center shadow-2xl p-4">
                 <!-- image -->
                 <div class="bg-[#f3f3f3] p-5 flex items-center justify-center">
                     <img src="./images/prod6.png" alt="">
@@ -167,7 +167,7 @@
                     <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                   </div>
                   <h3 id="item-name" class="font-semibold text-xl">Sports cates</h3>
-                  <p class="text-[#b8b8b8] font-semibold text-xl"><span class="" id="item-price">159.00</span>TK</p>
+                  <p class="text-[#b8b8b8] font-semibold text-xl"><span class="" id="item-price">159.00 </span>TK</p>
 
              </div>
 
@@ -178,31 +178,46 @@
             <!-- top part -->
             <div class="shadow-lg p-8 mt-14">
                 <h2 class=" font-semibold text-2xl mb-4 md:text-left text-center">Have coupon?</h2>
-                <input class="border-2 text-center py-2 rounded-lg" type="text" placeholder="Coupon code">
-                <button class="bg-[#e527b2] p-2 text-white text-xl ml-[-10px] rounded-r-2xl "  disabled="true">Apply</button>
+                <input id="cupon-code" class="border-2 text-center py-2 rounded-lg" type="text" placeholder="Coupon code">
+                <button id="btn-apply" class="bg-[#e527b2] p-2 text-white text-xl ml-[-10px] rounded-r-2xl "  disabled="true">Apply</button>
    
             </div>
              <!-- bottom part -->
          <div class="mt-12">
 
-            <div class="shadow-lg py-8 px-8">
+            <div class="shadow-lg py-8 px-8 space-y-2">
                 <div id="item-name-list">
                   
-                      <ol type="1">
-                        <li>abcsfasdfasdfasfa</li>
-                        <li>abcfasdfasdfsd</li>
-                        <li>abc</li>
-                      </ol>
-                 
                 </div>
-                <hr>
-                <p>Total Price: <span>0.00</span>TK</p>
-                <p>Discount: <span>0.00</span>TK</p>
-                <p>Total: <span>0.00</span>TK</p>
-                  <hr>
+                <hr class="mt-4 mb-4">
+                <p class=" font-semibold text-xl">Total Price: <span id="item-total-price" class="text-[#b8b8b8]">0.00</span><span class="text-[#b8b8b8]">TK</span></p>
+                <p class="font-semibold text-xl">Discount: <span id="discount-price" class="text-[#b8b8b8]">0.00</span><span class="text-[#b8b8b8]">TK</span></p>
+                <p class="font-semibold text-xl">Total: <span id="grand-total-price" class="text-[#b8b8b8]">0.00</span><span class="text-[#b8b8b8]">TK</span></p>
+                  <hr class="mt-4 mb-4">
                </div>
-               <button class="bg-[#e527b2] px-10 py-2 relative bottom-5 text-white rounded-lg">Make Purchase</button>
+               <!-- <button id="make-purchase" class="bg-[#e527b2] px-10 py-2 relative bottom-5 text-white rounded-lg" disabled="true">Make Purchase</button> -->
+
+                   <!-- Open the modal using ID.showModal() method -->
+<button id="make-purchase" class="bg-[#e527b2] px-10 py-2 relative bottom-5 text-white rounded-lg" disabled="true" onclick="my_modal_2.showModal()">Make Purchase</button>
+<dialog id="my_modal_2" class="modal">
+  <div method="dialog" class="modal-box w-[300px] h-[300px] ">
+             <div class="flex items-center justify-center">
+                <img src="./images/congo.png" alt="" class="w-[100px] h-[100px]">
+             </div>
+             <h2 class="text-center font-bold text-3xl">Congratulations</h2>
+    <p class="text-[#b8b8b8] text-lg mt-2 mb-10">Your Purchase the product </p>
+    <button id="btn-home" class="bg-[#e527b2] px-10 py-2 relative bottom-5 text-white rounded-lg">Go Home</button>
+  </div>
+  
+  <form method="dialog" class="modal-backdrop">
+    <button>close</button>
+  </form>
+</dialog>
+
          </div>
+<!--  -->
+
+         <!--  -->
         </div>
     </div>
 </section>
