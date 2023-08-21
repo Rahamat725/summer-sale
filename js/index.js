@@ -12,10 +12,14 @@ if(total>0){
     document.getElementById('item-total-price').innerText=total;
     const makePurchase = document.getElementById('make-purchase');
     makePurchase.disabled=false;
+    makePurchase.style.backgroundColor='#e527b2'
 }
 
 if(total>=200){
-    document.getElementById('btn-apply').disabled=false;
+    // document.getElementById('btn-apply').disabled=false;
+  const btnApply =  document.getElementById('btn-apply')
+   btnApply.disabled=false;
+   btnApply.style.backgroundColor='#e527b2'
 }
 
 
@@ -44,3 +48,5 @@ document.getElementById('btn-home').addEventListener('click',function(){
     document.getElementById('grand-total-price').innerText='0.00';
     window.location.href="index.html"
 })
+
+// bg-[#e527b2]
