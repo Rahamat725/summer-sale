@@ -8,6 +8,8 @@ document.getElementById('item-name-list').appendChild(li);
 
 const price = target.childNodes[11].innerText.split(" ")[0];
 total = parseFloat(total) + parseFloat(price);
+
+// if the price is greater than (price>0) then Make Purchase button will active
 if(total>0){
     document.getElementById('item-total-price').innerText=total;
     const makePurchase = document.getElementById('make-purchase');
@@ -15,6 +17,7 @@ if(total>0){
     makePurchase.style.backgroundColor='#e527b2'
 }
 
+// if total item is 200 or above then Apply button will active
 if(total>=200){
     // document.getElementById('btn-apply').disabled=false;
   const btnApply =  document.getElementById('btn-apply')
@@ -24,6 +27,8 @@ if(total>=200){
 
 
 }
+
+// cupon apply button
 
 document.getElementById('btn-apply').addEventListener('click',function(){
     const cuponCode = document.getElementById('cupon-code').value;
